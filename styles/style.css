@@ -1,0 +1,162 @@
+:root {
+  /* 🎨 Кольори за застосуванням */
+  --color-header-background: #030B14;
+  --color-hero-background: #050D18; 
+  --color-section-background: #07101C; 
+  --color-order-background: #09121D; 
+  --color-footer-background: #040C15; 
+  --color-header-background: #030B14;
+  --color-section-border: #141A22;
+  --color-text: #FAFAFA;
+  --color-accent: #C3E356;
+  --color-text-second: #ECECED;
+  --color-card: #0E1621;
+
+  /* ✍️ Шрифти */
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-subheading: "JetBrains Mono", monospace;
+
+  /* 🔠 Розміри тексту */
+  --size-heading-xl: 48px;
+  --size-heading-lg: 32px;
+  --size-heading-md: 24px;
+  --size-body: 16px;
+  --size-small: 14px;
+
+  /* 🅱️ Жирність тексту */
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* 📐 Відступи */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+
+  /* 🌟 Ефекти */
+  --shadow-neon-green: 0 0 10px var(--color-accent-primary),
+                       0 0 20px var(--color-accent-primary);
+  --shadow-neon-yellow: 0 0 10px var(--color-accent-secondary),
+                        0 0 20px var(--color-accent-secondary);
+
+  --transition-fast: 0.2s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+.header{
+    padding: 16px 0;
+    background-color: var(--color-header-background);
+    border-bottom: 1px solid var(--color-section-border);
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-link{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: var(--size-heading-xl);
+    font-weight: var(--weight-bold);
+    letter-spacing: var(--spacing-xs);
+}
+
+.header__logo-text{
+    margin-left: -12px;
+    color: var(--color-text);
+    font-size: var(--size-heading-md);
+    letter-spacing: normal;
+    font-weight: var(--weight-normal);
+}
+
+.header__nav{
+    display: none;
+}
+
+.header__nav-list{
+    display: flex;
+    align-items: end;
+    gap: 16px;
+}
+
+.header__nav-link{
+    color: var(--color-text);
+    font-family: var(--font-subheading);
+    font-size: 20px;
+    letter-spacing: normal;
+    font-weight: var(--weight-normal);
+    transition: color 0.3s ease;
+
+    &:hover{
+        color: var(--color-accent);
+    }
+}
+
+.header__open-mobile-menu{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.header__btn-line{
+    display: block;
+    background-color: var(--color-text-second);
+    width: 40px;
+    height: 2px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.header__open-mobile-menu:hover .header__btn-line{
+    background-color: #C3E356;
+}
+
+.header__contact-btn{
+    display: none;
+    background-color: transparent;
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    color: var(--color-accent);
+    font-size: var(--size-heading-md);
+    font-family: var(--font-heading);
+    padding: 8px 16px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.hero{
+    background-color: var(--color-hero-background);
+}
+
+@media (min-width: 768px){
+    .header__nav{
+    display: block;
+}
+
+.header__open-mobile-menu{
+    display: none;
+}
+
+.header__contact-btn{
+    display: block;
+}
+}
