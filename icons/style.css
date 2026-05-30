@@ -1,0 +1,38 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #FAFAFA;
+
+  &:hover{
+      color: #C3E356;
+    }
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-folder {
+  width: 0.9287109375em;
+}
+
+.icon-phone {
+  width: 0.7861328125em;
+}
+
+.icon-github {
+  width: 0.857421875em;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
