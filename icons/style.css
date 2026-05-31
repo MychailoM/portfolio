@@ -5,12 +5,46 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-  color: #FAFAFA;
+}
 
-  &:hover{
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-embed {
+  width: 1.25em;
+}
+
+.icon-folder {
+  width: 0.9287109375em;
+}
+
+.icon-phone {
+  width: 0.7861328125em;
+}
+
+.icon-github {
+  width: 0.857421875em;
+}
+
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #FAFAFA;
+}
+
+.icon:hover{
       color: #C3E356;
     }
-}
 
 /* ==========================================
 Single-colored icons can be modified like so:
