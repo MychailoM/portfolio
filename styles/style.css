@@ -1,5 +1,4 @@
 :root {
-  /* 🎨 Кольори за застосуванням */
   --color-header-background: #030B14;
   --color-hero-background: #050D18; 
   --color-section-background: #07101C; 
@@ -12,33 +11,28 @@
   --color-text-second: #ECECED;
   --color-card: #0E1621;
 
-  /* ✍️ Шрифти */
   --font-heading: "Space Grotesk", sans-serif;
   --font-body: "Manrope", sans-serif;
   --font-subheading: "JetBrains Mono", monospace;
 
-  /* 🔠 Розміри тексту */
   --size-heading-xl: 48px;
   --size-heading-lg: 32px;
   --size-heading-md: 24px;
   --size-body: 16px;
   --size-small: 14px;
 
-  /* 🅱️ Жирність тексту */
   --weight-light: 300;
   --weight-normal: 400;
   --weight-medium: 500;
   --weight-bold: 700;
   --weight-black: 900;
 
-  /* 📐 Відступи */
   --spacing-xs: 4px;
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 32px;
   --spacing-xl: 64px;
 
-  /* 🌟 Ефекти */
   --shadow-neon-green: 0 0 10px var(--color-accent-primary),
                        0 0 20px var(--color-accent-primary);
   --shadow-neon-yellow: 0 0 10px var(--color-accent-secondary),
@@ -211,7 +205,6 @@
 
 .hero__img-wrap{
     width: 80%;
-    /* display: none; */
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -262,13 +255,11 @@
     padding: 24px 20px;
     background-color: var(--color-accent);
     transition: box-shadow 0.4s ease;
-    
+}
 
-
-    &:hover{
+.hero__button:hover{
         box-shadow: 2px 2px 8px 8px #ffffff1c;
     }
-}
 
 
 .about {
@@ -616,6 +607,7 @@
 }
 
 .contact__btn{
+    color: var(--color-section-border);
     padding: 20px 32px;
     border-radius: 8px;
     background-color: var(--color-accent);
@@ -692,6 +684,118 @@
     fill: var(--color-accent);
 }
 
+.mobile__menu {
+    display: none;
+}
+
+.mobile__menu.open {
+    display: block;
+}
+
+.mobile__menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-header-background);
+    z-index: 1000;
+    padding: 24px;
+}
+
+.mobile__menu.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile__logo-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.mobile__logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-accent);
+    font-size: 34px;
+    font-family: var(--font-heading);
+    font-weight: var(--weight-bold);
+}
+
+.mobile__logo-text {
+    color: var(--color-text);
+    font-size: var(--size-heading-md);
+    font-weight: var(--weight-normal);
+}
+
+.close__mobile-menu {
+    background: transparent;
+    border: none;
+    color: var(--color-text);
+    font-size: 32px;
+    cursor: pointer;
+    transition: color .3s ease;
+    position: absolute;
+    right: 40px;
+}
+
+.close__mobile-menu:hover {
+    color: var(--color-accent);
+}
+
+.mobile__nav {
+    flex: 1;
+}
+
+.mobile__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mobile__nav-link {
+    color: var(--color-text);
+    font-size: 24px;
+    font-family: var(--font-heading);
+    font-weight: var(--weight-medium);
+    transition: color .3s ease;
+}
+
+.mobile__nav-link:hover {
+    color: var(--color-accent);
+}
+
+.mobile__socials-wrap {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 32px;
+    border-top: 1px solid var(--color-section-border);
+    padding-bottom: 64px;
+}
+
+.mobile__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile__icon {
+    width: 36px;
+    height: 36px;
+    fill: var(--color-text);
+    transition: fill .3s ease, transform .3s ease;
+}
+
+.mobile__icon:hover {
+    fill: var(--color-accent);
+    transform: translateY(-3px);
+}
 
 
 @media (max-width: 480px){
