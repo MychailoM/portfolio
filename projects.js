@@ -31,7 +31,7 @@ const projects = [
   },
   {
     name: "WebStudio",
-    url: "https://web-studio-blue.vercel.app/",
+    url: "https://web-studio-scss-seven.vercel.app/",
     img: "webstudio",
   },
   {
