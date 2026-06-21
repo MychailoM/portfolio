@@ -44,6 +44,11 @@ const projects = [
     url: "https://www.shiman-clean.com.ua/",
     img: "shimancleanall",
   },
+  {
+    name: "High peaks",
+    url: "https://mountain-flame.vercel.app/",
+    img: "highPeaks",
+  },
 ];
 
 const container = document.querySelector(".content");
