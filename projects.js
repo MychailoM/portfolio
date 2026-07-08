@@ -49,6 +49,16 @@ const projects = [
     url: "https://mountain-flame.vercel.app/",
     img: "highPeaks",
   },
+    {
+    name: "MNTN",
+    url: "https://mntm-murex.vercel.app/",
+    img: "MNTN",
+  },
+  {
+    name: "Coffee Time",
+    url: "https://coffe-time-five.vercel.app/",
+    img: "coffee-time",
+  },
 ];
 
 const container = document.querySelector(".content");
