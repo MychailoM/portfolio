@@ -59,6 +59,21 @@ const projects = [
     url: "https://coffe-time-five.vercel.app/",
     img: "coffee-time",
   },
+  {
+    name: "Cars",
+    url: "https://cars-beige-delta.vercel.app/",
+    img: "cars",
+  },
+  {
+    name: "Lush Garden",
+    url: "https://lush-garden-five.vercel.app/",
+    img: "lushGarden",
+  },
+  {
+    name: "Interno",
+    url: "https://interno-ivory.vercel.app/",
+    img: "interno",
+  },
 ];
 
 const container = document.querySelector(".content");
